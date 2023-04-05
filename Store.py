@@ -7,6 +7,8 @@ class Store:
         if self.order==self.max_order:
             raise RuntimeError('Order Overflow')
         self.order+=1
+    def get_a(self):
+        return 5
     def delivery(self):
         if self.order<=0:
             raise RuntimeError('order should not be negative')

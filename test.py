@@ -22,3 +22,7 @@ def test_delivery_underflow(mystore):
     mystore.delivery()
     with pytest.raises(RuntimeError):
         mystore.delivery()
+
+def test_got_a(mystore):
+    assert mystore.got_a() == 5
+
